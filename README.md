@@ -17,7 +17,7 @@ An STM32F407 microcontroller and a BTS7960 H-bridge turn 24 V DC into a sinusoid
 | Frequency | 50.072 Hz (oscilloscope) | 50.26 Hz | +0.4 % |
 | Lamp current (RMS) | 0.100 A (rated value) | 0.1005 A | +0.5 % |
 
-The calculated output was 11.88 V RMS (24 V · 0.70 / √2). The oscilloscope capture shows a clean 50 Hz sine wave (`Dokumentation/WaveForms_Ausgangsspannung_50Hz.png`).
+The calculated output was 11.88 V RMS (24 V · 0.70 / √2). The oscilloscope capture shows a clean 50 Hz sine wave.
 
 ## Hardware
 
@@ -74,14 +74,6 @@ All custom code lives in `Core/Src/main.c`, inside the `USER CODE` sections gene
 4. Commissioning: first USB only (check the sensors' idle values), then 24 V with the supply's current limit set.
 
 **Safety:** Never connect the ground clip of an earthed oscilloscope to the bridge output. Measure the output voltage with two channels against ground and take the difference.
-
-## Documentation (German)
-
-In the `Dokumentation/` folder:
-
-- `Wechselrichter_Modellhaus_Dokumentation.pdf` / `.docx`: full project documentation
-- `Wechselrichter_Modellhaus_Praesentation_THM.pptx`: project presentation with speaker notes
-- `WaveForms_Ausgangsspannung_50Hz.png`: oscilloscope capture of the output voltage
 
 ## Outlook
 

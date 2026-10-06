@@ -17,7 +17,7 @@ Ein STM32F407-Mikrocontroller und die H-Brücke BTS7960 erzeugen aus 24 V Gleich
 | Frequenz | 50,072 Hz (Oszilloskop) | 50,26 Hz | +0,4 % |
 | Lampenstrom (eff.) | 0,100 A (Nennwert) | 0,1005 A | +0,5 % |
 
-Berechnet waren 11,88 V eff. (24 V · 0,70 / √2). Die Oszilloskop-Messung zeigt einen sauberen 50-Hz-Sinus (`Dokumentation/WaveForms_Ausgangsspannung_50Hz.png`).
+Berechnet waren 11,88 V eff. (24 V · 0,70 / √2). Die Oszilloskop-Messung zeigt einen sauberen 50-Hz-Sinus.
 
 ## Hardware
 
@@ -74,14 +74,6 @@ Der gesamte eigene Code steht in `Core/Src/main.c` innerhalb der `USER CODE`-Ber
 4. Inbetriebnahme: zuerst nur USB (Sensor-Ruhewerte prüfen), dann 24 V mit Strombegrenzung am Netzteil.
 
 **Sicherheit:** Am Brückenausgang nie die Masseklemme eines geerdeten Oszilloskops anschließen. Die Ausgangsspannung mit zwei Kanälen gegen Masse messen und die Differenz bilden.
-
-## Dokumentation
-
-Im Ordner `Dokumentation/`:
-
-- `Wechselrichter_Modellhaus_Dokumentation.pdf` / `.docx`: ausführliche Projektdokumentation
-- `Wechselrichter_Modellhaus_Praesentation_THM.pptx`: Präsentation der Projektphase mit Sprechertext
-- `WaveForms_Ausgangsspannung_50Hz.png`: Oszilloskop-Messung der Ausgangsspannung
 
 ## Ausblick
 
