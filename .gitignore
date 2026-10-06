@@ -1,0 +1,8 @@
+# Build-Ausgaben von STM32CubeIDE
+Debug/
+Release/
+
+# Sperr- und Sicherungsdateien von Office/LibreOffice
+~$*
+.~lock.*#
+*_Sicherung.pptx
